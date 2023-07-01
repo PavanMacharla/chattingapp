@@ -6,8 +6,8 @@
 const app = express();
 const socket = require("socket.io");
 const PORT = 5000
-app.use(cors());
-app.use(express.json());
+// app.use(cors());
+// app.use(express.json());
 
 // mongoose
 //   .connect("mongodb+srv://pavan:pavan@cluster0.ushqo.mongodb.net/?retryWrites=true&w=majority", {
