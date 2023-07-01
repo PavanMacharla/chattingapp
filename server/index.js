@@ -5,7 +5,7 @@ const express = require("express");
 // const messageRoutes = require("./routes/messages");
 const app = express();
 // const socket = require("socket.io");
-
+const PORT = 4000
 // app.use(cors());
 // app.use(express.json());
 
@@ -24,7 +24,7 @@ mongoose
 // app.use("/api/auth", authRoutes);
 // app.use("/api/messages", messageRoutes);
 
-const server = app.listen(5000, () =>
+const server = app.listen(PORT, () =>
   console.log(`Server started on 5000`)
 );
 // const io = socket(server, {
