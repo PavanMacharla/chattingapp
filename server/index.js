@@ -23,8 +23,7 @@ mongoose
 
 // app.use("/api/auth", authRoutes);
 // app.use("/api/messages", messageRoutes);
-
-const server = app.listen(PORT, () =>
+ app.listen(PORT, () =>
   console.log(`Server started on 5000`)
 );
 // const io = socket(server, {
