@@ -27,12 +27,12 @@ app.use("/api/messages", messageRoutes);
 const server = app.listen(5000, () =>
   console.log(`Server started on 5000`)
 );
-const io = socket(server, {
-  cors: {
-    origin: "https://chattingapp-rayo.vercel.app/",
-    credentials: true,
-  },
-});
+// const io = socket(server, {
+//   cors: {
+//     origin: "https://chattingapp-rayo.vercel.app/",
+//     credentials: true,
+//   },
+// });
 
 global.onlineUsers = new Map();
 io.on("connection", (socket) => {
